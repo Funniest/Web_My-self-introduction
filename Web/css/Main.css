@@ -1,0 +1,389 @@
+html, body{
+	margin: 0 0 0 0;
+	height: 0 0 0 0;
+
+	height: 100%;
+}
+/*Background css*/
+.background-img{
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: -1;
+
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-ms-filter: blur(5px);
+	-o-filter: blur(5px);
+	filter: blur(5px);
+}
+
+/*Header css*/
+.header{
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.h-middle{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color:#f1f1f1;
+	background:rgba(0, 0, 0, 0.48);
+}
+
+.h-poto-img{
+   border-radius: 10px;
+}
+
+.a_btn{
+	border-radius: 5px;
+	border: 1px solid white;
+	padding: 5px 15px 5px 15px;
+	background-color: rgba( 0, 0, 0, 0.5 );
+	color: #FFFFFF;
+	text-decoration: none;
+
+	opacity: 0.5;
+}
+
+.a_btn:hover{ 
+	background-color: #FFFFFF; 
+	color: #000000;
+}
+
+/*nav css*/
+.nav{
+	display: table;
+	width: 100%;
+	background-color: rgba( 0, 0, 0, 0.5 );
+	position: fixed;
+	z-index: 1;
+}
+
+.navbar{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+/*Nav site name left*/
+.n-left{
+	padding-left: 15px;
+	padding-right: 15px;
+
+	float: left;
+	width: 30%;
+}
+
+.nav-logo-left{
+	float: left;
+	margin: 10px 10px 10px 0;
+}
+
+.nav-logo-img{
+	width: 60px;
+	height: 60px;
+}
+
+.site-name-right{
+	float: left;
+}
+
+.site-name a{
+	color: #FFFFFF;
+	font-size: 32px;
+	text-decoration: none;
+}
+
+.add-explanation{
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+/*Nav site main nav right*/
+.n-rigth{
+	padding-left: 15px;
+	padding-right: 15px;
+
+	float: right;
+	width: 60%;
+}
+
+.main-navi{
+	float: left;
+}
+
+.main-navi-list{
+	list-style: none;
+}
+
+.object{
+	padding: 15px 15px 15px 15px;
+	float: left;
+}
+
+.object a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/*Main container*/
+.container{
+	padding-top: 80px;
+}
+
+/*...*/
+.contents{
+
+}
+
+.margin-px{
+	margin-right: 200px;
+	margin-left: 200px;	
+}
+
+.padding-px{
+	padding-right: 200px;
+	padding-left: 200px;	
+}
+
+.space{
+	clear: both;
+	padding: 20px 0;
+}
+
+/*About*/
+.about{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.text-body{
+	width: 100%;
+}
+
+.emphasis{
+	color: #339BEB;
+}
+
+.title, .under-the-title{
+	vertical-align: middle;
+	text-align: center;
+}
+
+.img-left{
+	float: left;
+	z-index: -1;
+
+	display: inline-block;
+	position: relative;
+	overflow: hidden; /* 불필요한 부분 가리기 */
+	padding: 6px; /* 6px정도 이미지 밖으로 표현 */
+}
+
+.img-left .myPoto_text{
+	width: 500px;
+	height: 281px;
+
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.img-left:before,
+.img-left:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 97px;
+  height: 50px;
+  background: #fff; /* 배경색과 같은 색 */
+  transform: rotate(-30deg);
+}
+/* 왼쪽 위 */
+.img-left:before {
+  box-shadow: 0 10px 8px -12px rgba(0, 0, 0, 0.8);
+  top: -24px;
+  bottom: auto;
+  right: auto;
+  left: -26px;
+}
+/* 오른쪽 아래 */
+.img-left:after {
+  box-shadow: 0 -10px 10px -10px rgba(0, 0, 0, 0.7);
+  top: auto;
+  bottom: -22px;
+  right: -25px;
+  left: auto;
+}
+
+.text-right{
+	width: 50%;
+	float: right;
+}
+
+.text-right p{
+	font-size: 15px;
+	color: #333333;
+	line-height: 1.50;
+}
+
+/*Skill*/
+.skill{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.skill-list, .skill-object{
+	background-color: #fafafa;
+	list-style-type: none;
+	padding: 0;
+  	margin: 0;
+}
+
+.skill-list{
+  	padding: 2em 0;	
+}
+
+.skill-object{
+	padding: 1em;
+  	margin-left: 3em;
+  	font-size: 15px;
+}
+
+.skill-object:before {
+	background-color: #fafafa;
+	content: '☆';
+	float: left;
+	margin-left: -1.5em;
+	color: #0074D9;
+}
+
+.drop-bar{
+	float: left;
+	width: 100%;
+}
+
+.drop-bar-menu{
+	width: 100%;
+	padding: 0;
+}
+
+.drop-name{
+	padding: 15px;
+	list-style: none;
+	font:24px "Bonveno", "Century Gothic";
+	background-color: #000000;
+	color: #FFFFFF;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.drop-hide-menu{
+	width: 100%;
+	background-color: #fafafa;
+	height: auto;
+	list-style-type: none;									
+	padding: 0;
+}
+
+.drop-name:hover{
+	background-color: #55acee;
+	list-style-type: none;
+}
+
+.drop-show{
+	background-color: #55acee;
+}
+
+.show{
+	display: block;
+}
+
+.hide{
+	display: none;
+}
+
+/*Pros and cons*/
+.under_bar{
+	border-bottom: 2px solid #FFFFFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.pros-and-cons{
+	background-color: #4D4D4D;
+}
+
+.white-text{
+	color: white;
+}
+
+.pc-box{
+	width: 30%;
+	height: 250px;
+	border: 1px solid #FFFFFF;
+	background-color: #333333;
+	display: inline-block;
+}
+
+
+.pc-box-middle{
+	vertical-align: middle;
+	text-align: center;
+}
+
+.pc-left{
+	float: left;
+}
+
+.pc-right{
+	float: right;
+	margin-right: 0px;
+}
+
+.pc-middle{
+	margin: auto;
+	text-align: center;
+	margin-left: 5%;
+}
+
+.pc-img{
+	padding-top: 10px;
+	width: 60px;
+	height: 60px;
+}
+
+.p-and-c{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+.pc-text{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+	color: white;
+}
+
+.footer{
+	background-color: #fffdfe;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer h1{
+	font-size: 24px;
+}
+
+.footer h2{
+	font-size: 18px;
+}
